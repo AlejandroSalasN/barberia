@@ -1,8 +1,20 @@
-document.querySelector('.menu-btn').addEventListener('click', ()=>{
-    document.querySelector('.nav-menu').classList.toggle('show');
-})
+let i = document.getElementsByClassName('visible')[0].id;
 
-ScrollReveal().reveal('.showcase');
-ScrollReveal().reveal('.news-cards', {delay:500});
-ScrollReveal().reveal('.cards-banner-one', {delay:500});
-ScrollReveal().reveal('.cards-banner-two', {delay:500});
+document.querySelector('.derecha').addEventListener('click', ()=>{
+    document.getElementById(i).classList.remove('visible');
+    if (i < 3) {
+        i++;
+    } else {
+        i = 1;
+    }
+    document.getElementById(i).classList.add('visible');
+});
+document.querySelector('.izquierda').addEventListener('click', ()=>{
+    document.getElementById(i).classList.remove('visible');
+    if (i > 1) {
+        i--;
+    } else {
+        i = 3;
+    }
+    document.getElementById(i).classList.add('visible');
+})

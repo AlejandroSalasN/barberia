@@ -111,4 +111,60 @@ ul{
     font-size: 4rem;
 }
 
+/*Mi trabajo*/
 
+.mi-trabajo{
+    width: 100%;
+    height: 762px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    background-color: #ffffff;
+    align-items: center;
+    position: absolute;
+}
+.izquierda{
+    background-color: transparent;
+    border-style: none;
+    position: absolute;
+    top: 50%;
+    left: 1%;
+    color: #626262;
+    opacity: 0.7;
+    font-size: 4rem;
+}
+.derecha:hover, .izquierda:hover{
+    opacity: 0.2;
+}
+.derecha{
+    position: absolute;
+    top:50%;
+    right: 51%;
+    color: #626262;
+    opacity: 0.7;
+    font-size: 4rem;
+    border-style: none;
+    background-color: transparent;
+}
+.slider li img{
+    width: 100%;
+    height: 762px;
+    object-fit: cover;
+    display: none;
+}
+.slider li img.visible{
+    display: block;
+}
+.mi-trabajo .titulo-seccion{
+    text-align: center; 
+    padding: 0 33%; 
+}
+.mi-trabajo .titulo-seccion h3{
+    font-size: 64px;
+    font-family:'Times New Roman', Times, serif;
+    color: #000000;
+}
+.mi-trabajo .titulo-seccion h3:last-child{
+    border-bottom: 4px solid #D89616;
+    border-radius: 4px;
+}
